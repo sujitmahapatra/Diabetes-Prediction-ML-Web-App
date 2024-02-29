@@ -1,5 +1,9 @@
 # Diabetes-Prediction-ML-Web-App
 Diabetes Prediction ML Web App. Includes machine learning models such as Logistic Regression, Random Forest, Gradient Boosting, and Support Vector Machine (SVM). For Web App - HTML, CSS and Django framework.
+
+## Screenshots
+![output1](https://github.com/sujitmahapatra/Diabetes-Prediction-ML-Web-App/blob/9e598f88605bd90d70f84f8ac8f03c14ffc94da2/Web%20App%20Output%20File/homepage.png)
+![output2](https://github.com/sujitmahapatra/Diabetes-Prediction-ML-Web-App/blob/9e598f88605bd90d70f84f8ac8f03c14ffc94da2/Web%20App%20Output%20File/predictpage.png)
 ## Demo Video
 Check out the demo video showcasing the functionality of the web application [here](link_to_demo_video).
 ## Dataset Details
