@@ -1,1 +1,136 @@
+{% load static %}
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url("{% static 'DiabetesPrediction/images/png1.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background: linear-gradient(135deg, #f3f3f3, #ffffff);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow-y: auto; /* Add vertical scroll if content overflows */
+            max-height: 80vh; /* Limit container height to 80% of viewport height */
+        }
+        h1 {
+            color: #0086b3;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 0;
+        }
+        form {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-top: 5px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:hover,
+        input[type="text"]:focus {
+            border-color: #0086b3;
+        }
+        input[type="submit"] {
+            background-color: #4dc3ff;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0099cc;
+        }
+        .result {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Custom scrollbar styles */
+        .container::-webkit-scrollbar {
+            width: 10px;
+        }
+        .container::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+        .container::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+        .container::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Welcome to the Diabetes Prediction Page</h1>
+        <p>Please enter the following information to get the prediction result.</p>
+    </header>
+    <form action="result">
+        <label for="n1">Pregnancies:</label>
+        <input type="text" id="n1" name="n1" required>
+
+        <label for="n2">Glucose:</label>
+        <input type="text" id="n2" name="n2" required>
+
+        <label for="n3">Blood Pressure:</label>
+        <input type="text" id="n3" name="n3" required>
+
+        <label for="n4">Skin Thickness:</label>
+        <input type="text" id="n4" name="n4" required>
+
+        <label for="n5">Insulin:</label>
+        <input type="text" id="n5" name="n5" required>
+
+        <label for="n6">BMI:</label>
+        <input type="text" id="n6" name="n6" required>
+
+        <label for="n7">Diabetes Pedigree function:</label>
+        <input type="text" id="n7" name="n7" required>
+
+        <label for="n8">Age:</label>
+        <input type="text" id="n8" name="n8" required>
+
+        <input type="submit" value="Predict">
+    </form>
+    <div class="result">
+        Result: {{ result2 }}
+    </div>
+</div>
+</body>
+</html>
