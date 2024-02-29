@@ -1,0 +1,81 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-image: url("{% static 'DiabetesPrediction/images/png3.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h3 {
+            color: #fffc00;
+            font-family: "Lucida Handwriting", cursive;
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        h1 {
+            color: white;
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: bounce 1.5s infinite;
+        }
+        h2 {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        input[type="submit"] {
+            background-color: #d40058;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #b3004c;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>Welcome to</h3>
+    <h1>DIABETES PREDICTION SYSTEM</h1>
+    <h2>Take control of your health. Get started now!</h2>
+    <form action="predict">
+        <input type="submit" value="Let's get started">
+    </form>
+</div>
+</body>
+</html>
