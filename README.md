@@ -3,10 +3,7 @@ Diabetes Prediction ML Web App. Includes machine learning models such as Logisti
 
 ## Screenshots
 ![output1](https://github.com/sujitmahapatra/Diabetes-Prediction-ML-Web-App/blob/9e598f88605bd90d70f84f8ac8f03c14ffc94da2/Web%20App%20Output%20File/homepage.png)
-![output2](https://github.com/sujitmahapatra/Diabetes-Prediction-ML-Web-App/blob/9e598f88605bd90d70f84f8ac8f03c14ffc94da2/Web%20App%20Output%20File/predictpage.png)
 
-## Demo Video
-Check out the demo video showcasing the functionality of the web application ![video](https://github.com/sujitmahapatra/Diabetes-Prediction-ML-Web-App/blob/ae091f91b2321d77594224f58293fccc240dbcc3/Web%20App%20Output%20File/Diabetes%20Prediction%20-%20Project%20GIF.gif)
 ## Dataset Details
 - **Dataset:** Utilized a dataset containing 769 records and 9 columns, with 8 independent variables and 1 dependent variable (Outcome).
 
@@ -19,6 +16,8 @@ Check out the demo video showcasing the functionality of the web application ![v
 ## Accuracy Achievement
 - Achieved an overall accuracy of approximately 75% across three models.
 - SVM led the pack with an accuracy of 77%.
+
+![output2](https://github.com/sujitmahapatra/Diabetes-Prediction-ML-Web-App/blob/9e598f88605bd90d70f84f8ac8f03c14ffc94da2/Web%20App%20Output%20File/predictpage.png)
 
 ## Platform
 - Jupyter Notebook, PyCharm
@@ -36,6 +35,9 @@ To set up the project locally, follow these steps:
 3. Once you're in the project directory, run the following command to start the
    <br> Django development server: `python manage.py runserver`
 4. Open a web browser and go to `http://127.0.0.1:8000/` to access the web application.
+
+## Demo Video
+Check out the demo video showcasing the functionality of the web application ![video](https://github.com/sujitmahapatra/Diabetes-Prediction-ML-Web-App/blob/ae091f91b2321d77594224f58293fccc240dbcc3/Web%20App%20Output%20File/Diabetes%20Prediction%20-%20Project%20GIF.gif)
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or pull requests for any improvements or bug fixes.
